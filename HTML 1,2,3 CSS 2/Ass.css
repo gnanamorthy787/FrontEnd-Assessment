@@ -1,0 +1,32 @@
+body{
+	background-color:gray;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+hgroup {
+        text-align: right;
+        font-family: arial, sans-serif;
+        padding-right: 30px;
+        border-right: 15px solid #42c73a;
+      }

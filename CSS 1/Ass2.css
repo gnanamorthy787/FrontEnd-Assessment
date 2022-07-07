@@ -1,0 +1,41 @@
+body{
+	background-image: url("OIP.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.about{
+	background-color:tomato;
+	color: #FFFFFF;
+	opacity: 0.6;
+	height: 400px;
+    width: 100%;
+}
+.motive{
+	background-color:blue;
+	color: #FFFFFF;
+	opacity: 0.6;
+	height: 200px;
+    width: 100%;
+}
+.function{
+	background-color:slateblue;
+	color: #FFFFFF;
+	opacity: 0.6;
+	height: 300px;
+    width: 100%;
+}
+.contact{
+	background-color:orange;
+	color: #FFFFFF;
+	opacity: 0.6;
+	height: 200px;
+    width: 100%;
+}
+h1{
+	font-size: xx-large;
+}
+div{
+	font-size: xx-large;
+	font-style:fantasy;
+	text-align: center;
+}

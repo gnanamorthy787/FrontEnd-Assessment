@@ -1,0 +1,116 @@
+<html>
+<head>
+   <title>JavaScript2</title>
+   <link rel="stylesheet" href="javascript2.css" />
+   <script src="javascript2.js" defer></script>
+   <script>
+       function myFunction() { 
+	   document.getElementById("mainFrameOne").style.display="none"; 
+	  document.getElementById("mainFrameTwo").style.display="block"; 
+       }
+   </script>
+</head>
+<body>
+<div id="mainFrameOne">
+    <p>mainFrameOne</p>
+</div>
+<div id="mainFrameTwo" style="display:none;">
+    <p>mainFrameTwo</p>
+</div>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Joe",
+  lastName: "Daisy"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+document.getElementById("demo").innerHTML = person.fullName.call(person2, ["Olso", "Nor"]); 
+
+</script>
+<div class="container">
+        <div id="increment-count">
+          <input type="image" id="up-arrow" src="up_arrow.png" />
+        </div>
+        <div id="total-count">
+        </div>
+        <div id="decrement-count">
+          <input type="image" id="down-arrow" src="down_arrow.png" />
+        </div>
+</div>
+<p>This example uses a lang property to get the value of the language property:</p>
+
+<p id="demo1"></p>
+
+<script>
+// Create an object:
+const persona = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+
+// Display data from the object using a getter:
+document.getElementById("demo1").innerHTML = persona.lang;
+</script>
+<p>Getters and setters allow you to get and set properties via methods.</p>
+
+<p>This example uses a lang property to set the value of the language property.</p>
+
+<p id="demo2"></p>
+
+<script>
+// Create an object:
+const personb= {
+  firstName: "John",
+  lastName: "Doe",
+  language: "NO",
+  set lang(value) {
+    this.language = value;
+  }
+};
+
+// Set a property using set:
+personb.lang = "en";
+
+// Display data from the object:
+document.getElementById("demo2").innerHTML = personb.language;
+</script>
+<h2>JavaScript Objects</h2>
+
+<p>Using an object constructor:</p>
+
+<p id="demo5"></p>
+
+<script>
+function Personc(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+const myFather = new Personc("John", "Doe", 50, "blue");
+const myMother = new Personc("Sally", "Rally", 48, "green");
+
+document.getElementById("demo5").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age; 
+</script>
+</body>
+</html>
